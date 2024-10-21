@@ -152,6 +152,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
+# Camera
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
+
 # Configstore
 PRODUCT_PACKAGES += \
     disable_configstore
